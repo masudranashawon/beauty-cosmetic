@@ -1,0 +1,225 @@
+/* ================== GOOGLE FONT CDN LINK ================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ================== GLOBAL CSS STARTS ================== */
+:root {
+	--color-primary: #dc143b;
+	--color-primary-variant: #000000;
+	--color-bg-one: #f5f5f5;
+	--color-light: #dedfd9;
+	--color-gray: #928d8c;
+	--color-white: #f5f5f5;
+	--color-black: #000000;
+	--container-width: 80%;
+	--transition: all 0.3s ease-in-out;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--color-bg-one);
+	line-height: 1.8;
+	overflow-x: hidden;
+}
+
+h1,
+h2 {
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 3.8rem;
+	color: var(--color-white);
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: var(--color-black);
+}
+
+a {
+	color: var(--color-gray);
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--color-primary);
+}
+
+.container {
+	width: var(--container-width);
+	margin: auto;
+	max-width: 2160px;
+}
+
+img {
+	width: 100%;
+	display: block;
+	object-fit: cover;
+}
+/* ================== GLOBAL CSS ENDED ================== */
+
+/* ================== NAVBAR CSS STARTED ================== */
+nav {
+	width: 100vw;
+	height: calc(16px * 4.3);
+	background-color: var(--color-primary-variant);
+	display: grid;
+	place-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+nav .nav-container {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-logo {
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.nav-logo h2 {
+	transition: var(--transition);
+	line-height: 0.8;
+}
+
+.nav-logo h2 a {
+	color: var(--color-white);
+	font-size: 1.4rem;
+}
+
+.nav-logo:hover a {
+	color: var(--color-primary);
+}
+
+.nav-logo h2 a span {
+	color: var(--color-primary);
+}
+
+.nav-logo:hover a span {
+	color: var(--color-white);
+}
+
+.nav-logo a .tagline {
+	color: var(--color-gray) !important;
+	font-size: calc(16px - 4px);
+}
+
+.nav-links ul {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 1rem;
+}
+
+.nav-links ul li:first-child a {
+	color: var(--color-primary) !important;
+}
+
+.nav-links ul li a {
+	color: var(--color-light) !important;
+	text-transform: uppercase;
+	font-size: calc(16px - 4px);
+	font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+	color: var(--color-primary) !important;
+}
+
+.offer-bar {
+	/* margin-top: calc(16px * 4.3); */
+	background-color: var(--color-primary);
+	text-align: center;
+	width: 100vw;
+	font-size: 0.7rem;
+	color: var(--color-light);
+	font-weight: 500;
+	letter-spacing: 1.2px;
+	padding: 5px;
+}
+
+.offer-bar span {
+	color: var(--color-black);
+	font-weight: 700;
+}
+/* ================== NAVBAR CSS ENDED ================== */
+
+/* ================== HEADER CSS STARTS ================== */
+header {
+	height: calc(100vh - 18vh);
+	/* height: 100vh; */
+	background: url(images/bg-image-one.jpg) no-repeat 10% 38% / cover fixed;
+}
+.header-container {
+	margin-top: calc(16px * 5);
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	align-items: center;
+}
+
+.header-contents {
+	margin-right: 62%;
+}
+
+.header-contents h2:first-child {
+	color: var(--color-primary);
+	border-bottom: 1px solid var(--color-primary);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.header-contents :nth-child(3) {
+	color: var(--color-white);
+	text-transform: uppercase;
+	font-size: 1.5rem;
+}
+
+.header-contents :nth-child(4) {
+	color: var(--color-white);
+	font-size: 0.8rem;
+	text-align: justify;
+	word-spacing: -1px;
+	line-height: 1.2;
+	margin: 0.6rem 7.4rem 0.6rem 0;
+	font-weight: 500;
+}
+
+.header-contents a {
+	color: var(--color-primary);
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 2px solid var(--color-primary);
+	padding: 5px 25px;
+	margin: 40px 0;
+	display: inline-block;
+}
+
+.header-contents a:hover {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border: 2px solid var(--color-light);
+}
+
+/* ================== HEADER CSS ENDED ================== */ ;
