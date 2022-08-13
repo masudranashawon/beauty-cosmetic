@@ -99,26 +99,31 @@ nav .nav-container {
 	text-transform: uppercase;
 }
 
-.nav-logo h2 {
+.nav-logo h2,
+.foot-logo h2 {
 	transition: var(--transition);
 	line-height: 0.8;
 	font-size: 2.5rem;
 }
 
-.nav-logo h2 a {
+.nav-logo h2 a,
+.foot-logo h2 a {
 	color: var(--color-white);
 	font-size: 1.4rem;
 }
 
-.nav-logo:hover a {
+.nav-logo:hover a,
+.foot-logo:hover a {
 	color: var(--color-primary);
 }
 
-.nav-logo h2 a span {
+.nav-logo h2 a span,
+.foot-logo h2 a span {
 	color: var(--color-primary);
 }
 
-.nav-logo:hover a span {
+.nav-logo:hover a span,
+.foot-logo:hover a span {
 	color: var(--color-white);
 }
 
@@ -368,3 +373,103 @@ header {
 	border: 5px solid var(--color-gray);
 }
 /* ================== BROWSE ITEMS ENDED ================== */
+
+/* ================== NEWSLETTER STARS ================== */
+.newsletter {
+	height: 30rem;
+	width: 100vw;
+	display: flex;
+}
+
+.newsletter-container {
+	background: var(--color-primary);
+	padding: 4.1rem 0;
+	border-radius: 1rem;
+}
+.newsletter h2 {
+	font-size: 1.5rem;
+	color: var(--color-white);
+	text-align: center;
+}
+
+.newsletter .form-sec {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.newsletter .form-sec input[type='email'] {
+	padding: 10px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	width: 20rem;
+	margin-right: 20px;
+	border-radius: 5px;
+	transition: var(--transition);
+}
+
+.newsletter .form-sec input[type='email']:focus {
+	border: 2px solid var(--color-primary-variant);
+}
+
+.newsletter .form-sec input[type='submit'] {
+	padding: 10px 20px;
+	font-size: 0.9rem;
+	font-weight: 700;
+	border-radius: 5px;
+	text-transform: uppercase;
+	color: var(--color-white);
+	background-color: var(--color-primary-variant);
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.newsletter .form-sec input[type='submit']:hover {
+	color: var(--color-primary-variant);
+	background-color: var(--color-light);
+}
+
+/* ================== NEWSLETTER ENDED ================== */
+
+/* ================== FOOTER STARTS ================== */
+footer {
+	height: 22rem;
+	width: 100vw;
+	display: flex;
+	background-color: var(--color-primary-variant);
+	place-content: center;
+	place-items: center;
+}
+
+footer .foot-logo {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer p {
+	color: var(--color-white);
+}
+
+footer a {
+	color: var(--color-white);
+}
+
+footer .social {
+	display: flex;
+	place-content: center;
+}
+
+footer .social a {
+	margin: 0 5px;
+	color: var(--color-white);
+}
+
+footer .social a:hover {
+	margin: 0 5px;
+	color: var(--color-primary);
+}
+
+/* ================== FOOTER ENDED ================== */
