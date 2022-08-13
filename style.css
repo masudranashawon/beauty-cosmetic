@@ -7,7 +7,7 @@
 	--color-primary-variant: #000000;
 	--color-bg-one: #f5f5f5;
 	--color-light: #dedfd9;
-	--color-gray: #928d8c;
+	--color-gray: #a8a4a3;
 	--color-white: #f5f5f5;
 	--color-black: #000000;
 	--container-width: 80%;
@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 3.2rem;
 	color: var(--color-black);
 }
 
@@ -84,6 +84,7 @@ nav {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 999;
 }
 
 nav .nav-container {
@@ -101,6 +102,7 @@ nav .nav-container {
 .nav-logo h2 {
 	transition: var(--transition);
 	line-height: 0.8;
+	font-size: 2.5rem;
 }
 
 .nav-logo h2 a {
@@ -222,4 +224,68 @@ header {
 	border: 2px solid var(--color-light);
 }
 
-/* ================== HEADER CSS ENDED ================== */ ;
+/* ================== HEADER CSS ENDED ================== */
+
+/* ================== SUBSCRIBER CSS STARTS ================== */
+.subscriber-count-bar {
+	height: 30rem;
+	display: flex;
+	place-items: center;
+	width: 100vw;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.subscriber-count-container {
+	display: flex;
+	background: var(--color-primary);
+	align-content: center;
+	justify-content: space-around;
+	align-items: center;
+	padding: 4.1rem 0;
+	border-radius: 1rem;
+}
+.subscriber-count-bar h2,
+.subscriber-count-bar p {
+	color: var(--color-white);
+}
+.subscriber-count-bar h2 {
+	font-size: 2.8rem;
+}
+.subscriber-count-bar p {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+/* ================== SUBSCRIBER CSS ENDED ================== */
+
+/* ================== COLLECTION CSS STARTS ================== */
+.collection h2 {
+	margin-bottom: 1.4rem;
+}
+
+.collection .collection-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.collection .collection-links a {
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.collection .collection-links li {
+	line-height: 1.4;
+}
+
+.collection ul div li:first-child a {
+	color: var(--color-primary);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* ================== COLLECTION CSS ENDED ================== */
+
+/* ================== BROWSE ITEMS STARTS ================== */
+
+/* ================== BROWSE ITEMS ENDED ================== */
