@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-	font-size: 3.2rem;
+	font-size: 2.6rem;
 	color: var(--color-black);
 }
 
@@ -224,6 +224,10 @@ header {
 	border: 2px solid var(--color-light);
 }
 
+.header-contents a:active {
+	border: 5px solid var(--color-gray);
+}
+
 /* ================== HEADER CSS ENDED ================== */
 
 /* ================== SUBSCRIBER CSS STARTS ================== */
@@ -287,5 +291,80 @@ header {
 /* ================== COLLECTION CSS ENDED ================== */
 
 /* ================== BROWSE ITEMS STARTS ================== */
+.browse-items {
+	padding: 4.5rem 0;
+}
+.browse-items .shop-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 2.5rem;
+	grid-row-gap: 4rem;
+	place-items: center;
+	place-content: center;
+}
+.browse-items h2 {
+	margin: 3rem 0;
+}
+.browse-items .card-details {
+	place-items: center;
+	display: grid;
+}
 
+.browse-items .card-details p {
+	font-size: 0.7rem;
+	text-align: justify;
+	color: var(--color-gray);
+	word-spacing: -1px;
+	line-height: 1.1;
+	margin-bottom: 8px;
+}
+
+.browse-items .card-details h3 {
+	margin: 8px 0;
+}
+
+.browse-items .card-details a {
+	color: var(--color-black);
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 2px solid var(--color-black);
+	padding: 5px 25px;
+	margin: 8px 0;
+	display: inline-block;
+	transition: var(--transition);
+}
+.browse-items .card {
+	box-shadow: 0 0 0.7rem #e2e1e1;
+	padding: 0.9rem;
+	border-radius: 0.4rem;
+	cursor: default;
+}
+.card-image {
+	overflow: hidden;
+	border-radius: 0.4rem;
+}
+
+.browse-items .card img {
+	transition: var(--transition);
+	height: 13rem;
+}
+
+.browse-items .card:hover img {
+	transform: scale(1.2);
+}
+
+.browse-items .card:hover h3 {
+	color: var(--color-primary);
+}
+
+.browse-items .card:hover a {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border: 2px solid var(--color-primary);
+}
+
+.browse-items .card:active a {
+	border: 5px solid var(--color-gray);
+}
 /* ================== BROWSE ITEMS ENDED ================== */
