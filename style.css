@@ -177,6 +177,7 @@ header {
 	/* height: 100vh; */
 	background: url(images/bg-image-one.jpg) no-repeat 10% 38% / cover fixed;
 }
+
 .header-container {
 	margin-top: calc(16px * 5);
 	display: flex;
@@ -232,7 +233,6 @@ header {
 .header-contents a:active {
 	border: 5px solid var(--color-gray);
 }
-
 /* ================== HEADER CSS ENDED ================== */
 
 /* ================== SUBSCRIBER CSS STARTS ================== */
@@ -256,13 +256,16 @@ header {
 	padding: 4.1rem 0;
 	border-radius: 1rem;
 }
+
 .subscriber-count-bar h2,
 .subscriber-count-bar p {
 	color: var(--color-white);
 }
+
 .subscriber-count-bar h2 {
 	font-size: 2.8rem;
 }
+
 .subscriber-count-bar p {
 	font-size: 1.4rem;
 	font-weight: 600;
@@ -301,6 +304,7 @@ header {
 	height: 70rem;
 	position: relative;
 }
+
 .about .model-one {
 	position: absolute;
 	bottom: 5rem;
@@ -372,6 +376,7 @@ header {
 .browse-items {
 	padding: 3rem 0;
 }
+
 .browse-items .shop-cards {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -380,9 +385,11 @@ header {
 	place-items: center;
 	place-content: center;
 }
+
 .browse-items h2 {
 	margin: 3rem 0;
 }
+
 .browse-items .card-details {
 	place-items: center;
 	display: grid;
@@ -412,12 +419,14 @@ header {
 	display: inline-block;
 	transition: var(--transition);
 }
+
 .browse-items .card {
 	box-shadow: 0 0 0.7rem #e2e1e1;
 	padding: 0.9rem;
 	border-radius: 0.4rem;
 	cursor: default;
 }
+
 .card-image {
 	overflow: hidden;
 	border-radius: 0.4rem;
@@ -453,6 +462,7 @@ header {
 	height: 70rem;
 	position: relative;
 }
+
 .contact .model-one {
 	position: absolute;
 	bottom: 5rem;
@@ -483,7 +493,6 @@ header {
 	width: 40%;
 	padding-right: 5rem;
 }
-
 /* ================== CONTACT	ENDED ================== */
 
 /* ================== NEWSLETTER STARS ================== */
@@ -498,6 +507,7 @@ header {
 	padding: 4.1rem 0;
 	border-radius: 1rem;
 }
+
 .newsletter h2 {
 	font-size: 1.5rem;
 	color: var(--color-white);
@@ -541,7 +551,6 @@ header {
 	color: var(--color-primary-variant);
 	background-color: var(--color-light);
 }
-
 /* ================== NEWSLETTER ENDED ================== */
 
 /* ================== FOOTER STARTS ================== */
@@ -583,5 +592,4 @@ footer .social a:hover {
 	margin: 0 5px;
 	color: var(--color-primary);
 }
-
 /* ================== FOOTER ENDED ================== */
