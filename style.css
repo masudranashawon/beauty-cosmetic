@@ -295,9 +295,82 @@ header {
 }
 /* ================== COLLECTION CSS ENDED ================== */
 
+/* ================== ABOUT STARTS ================== */
+.about {
+	padding: 5rem 0;
+	height: 70rem;
+	position: relative;
+}
+.about .model-one {
+	position: absolute;
+	bottom: 5rem;
+	left: 0;
+	width: 50%;
+	height: 50rem;
+	border-radius: 0 1.4rem 1.4rem 0;
+}
+
+.about .model-two {
+	position: absolute;
+	top: 5rem;
+	right: 0;
+	width: 58%;
+	height: 38rem;
+	border-radius: 1.4rem 0 0 1.4rem;
+}
+
+.about .about-container {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+	justify-content: flex-end;
+	align-items: flex-end;
+	height: 100%;
+}
+
+.about-content {
+	width: 40%;
+	padding-left: 5rem;
+}
+
+.about-content p,
+.contact p {
+	font-weight: 500;
+	color: var(--color-black);
+	text-align: justify;
+	line-height: 1.5;
+	margin: 10px 0;
+}
+
+.about a,
+.contact a {
+	color: var(--color-black);
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	border: 2px solid var(--color-black);
+	padding: 5px 25px;
+	margin: 10px 0;
+	display: inline-block;
+	transition: var(--transition);
+}
+
+.about a:hover,
+.contact a:hover {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border: 2px solid var(--color-primary);
+}
+
+.about a:active,
+.contact a:active {
+	border: 5px solid var(--color-gray);
+}
+/* ================== ABOUT CSS ENDED ================== */
+
 /* ================== BROWSE ITEMS STARTS ================== */
 .browse-items {
-	padding: 4.5rem 0;
+	padding: 3rem 0;
 }
 .browse-items .shop-cards {
 	display: grid;
@@ -369,10 +442,49 @@ header {
 	border: 2px solid var(--color-primary);
 }
 
-.browse-items .card:active a {
+.browse-items .card a:active {
 	border: 5px solid var(--color-gray);
 }
 /* ================== BROWSE ITEMS ENDED ================== */
+
+/* ================== CONTACT STARTS ================== */
+.contact {
+	padding: 3rem 0;
+	height: 70rem;
+	position: relative;
+}
+.contact .model-one {
+	position: absolute;
+	bottom: 5rem;
+	right: 0;
+	width: 50%;
+	height: 50rem;
+	border-radius: 1.4rem 0 0 1.4rem;
+}
+
+.contact .model-two {
+	position: absolute;
+	top: 5rem;
+	left: 0;
+	width: 58%;
+	height: 38rem;
+	border-radius: 0 1.4rem 1.4rem 0;
+	z-index: 1;
+}
+
+.contact .contact-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	height: 100%;
+}
+
+.contact-content {
+	width: 40%;
+	padding-right: 5rem;
+}
+
+/* ================== CONTACT	ENDED ================== */
 
 /* ================== NEWSLETTER STARS ================== */
 .newsletter {
